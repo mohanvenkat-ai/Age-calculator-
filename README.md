@@ -1,33 +1,19 @@
-# Age-calculator-
-A simple program to calculate age based on birth year
-#include<stdio.h>
+# Age Calculator
 
-int main()
-{
-    
-    int birthDay, birthMonth, birthYear;
-    int currentDay, currentMonth, currentYear;
-    int age;
+A simple C program to calculate a user's age based on their birth date and the current date.
 
-    // Get birth date
-    printf("Enter your birth date (DD MM YYYY): ");
-    scanf("%d %d %d", &birthDay, &birthMonth, &birthYear);
+## Features
+- Takes birth date and current date as input
+- Calculates accurate age in years
+- Adjusts for months and days
 
-    // Get current date
-    printf("Enter current date (DD MM YYYY): ");
-    scanf("%d %d %d", &currentDay, &currentMonth, &currentYear);
+## How to Run
+1. Save the code in a file named `age_calculator.c`
+2. Open a terminal/command prompt
+3. Compile the code:
+4. 4. Run the program:
+   5. ## Example Output
+   6. ---
 
-    // Calculate age
-    age = currentYear - birthYear;
-
-    // Adjust if birthday hasn't happened yet in the current year
-    if (currentMonth < birthMonth || 
-       (currentMonth == birthMonth && currentDay < birthDay)) {
-        age--;
-    }
-
-    printf("Your age is: %d years\n", age);
-
-    return 0;
-}
+📌 This is a beginner-friendly project to practice **C programming basics** such as input/output and simple calculations.
     
